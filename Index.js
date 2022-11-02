@@ -2,6 +2,7 @@ function App() {
   return (
     <div className="container">
       <div className="grid">
+        <div className="display"></div>
         <div className="padButton AC">AC</div>
         <div className="padButton C">C</div>
         <div className="padButton div">/</div>

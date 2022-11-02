@@ -9,10 +9,32 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "dis dis dis dis"
+    "display display display display"
     "AC C div times"
     "seven eight nine minus"
     "four five six plus"
     "one two three equal"
     "zero zero dot equal";
+}
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(141, 6, 6);
+  color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  font-family: pixel;
+  cursor: pointer;
+}
+.display {
+  grid-area: display;
+}
+.zero {
+  grid-area: zero;
+}
+
+.equal {
+  grid-area: equal;
 }
