@@ -1,26 +1,68 @@
 function App() {
+  const [expression, setExpression] = React.useState("");
+
+  const displayscreen = () => {
+    setExpression.prev;
+  };
+
   return (
     <div className="container">
       <div className="grid">
-        <div className="display"></div>
-        <div className="padButton AC">AC</div>
-        <div className="padButton C">C</div>
-        <div className="padButton div">/</div>
-        <div className="padButton times">*</div>
-        <div className="padButton seven">7</div>
-        <div className="padButton eight">8</div>
-        <div className="padButton nine">9</div>
-        <div className="padButton minus">-</div>
-        <div className="padButton four">4</div>
-        <div className="padButton five">5</div>
-        <div className="padButton six">6</div>
-        <div className="padButton plus">+</div>
-        <div className="padButton one">1</div>
-        <div className="padButton two">2</div>
-        <div className="padButton three">3</div>
-        <div className="padButton equal">=</div>
-        <div className="padButton zero">0</div>
-        <div className="padButton dot">.</div>
+        <div onClick={displayscreen} className="display"></div>
+        <div onClick={displayscreen} className="padButton AC">
+          AC
+        </div>
+        <div onClick={displayscreen} className="padButton C">
+          C
+        </div>
+        <div onClick={displayscreen} className="padButton div">
+          /
+        </div>
+        <div onClick={displayscreen} className="padButton times">
+          *
+        </div>
+        <div onClick={displayscreen} className="padButton seven dark">
+          7
+        </div>
+        <div onClick={displayscreen} className="padButton eight dark">
+          8
+        </div>
+        <div onClick={displayscreen} className="padButton nine dark">
+          9
+        </div>
+        <div onClick={displayscreen} className="padButton minus">
+          -
+        </div>
+        <div onClick={displayscreen} className="padButton four dark">
+          4
+        </div>
+        <div onClick={displayscreen} className="padButton five dark">
+          5
+        </div>
+        <div onClick={displayscreen} className="padButton six dark">
+          6
+        </div>
+        <div onClick={displayscreen} className="padButton plus">
+          +
+        </div>
+        <div onClick={displayscreen} className="padButton one dark">
+          1
+        </div>
+        <div onClick={displayscreen} className="padButton two dark">
+          2
+        </div>
+        <div onClick={displayscreen} className="padButton three dark">
+          3
+        </div>
+        <div onClick={displayscreen} className="padButton equal ">
+          =
+        </div>
+        <div onClick={displayscreen} className="padButton zero dark">
+          0
+        </div>
+        <div onClick={displayscreen} className="padButton dot dark">
+          .
+        </div>
       </div>
     </div>
   );
