@@ -1,9 +1,14 @@
 function App() {
   const [expression, setExpression] = React.useState("");
-
+  const [answer, setanswer] = React.useState(0);
   const displayscreen = (symbol) => {
     setExpression((prev) => prev + symbol);
   };
+  const calculate = () => {
+    setanswer(eval(expression));
+  };
+  const allClear = () => {};
+  const clear = () => {};
 
   return (
     <div className="container">
@@ -16,10 +21,10 @@ function App() {
             disabled
           ></input>
         </div>
-        <div onClick={() => displayscreen("AC")} className="padButton AC">
+        <div onClick={allClear} className="padButton AC">
           AC
         </div>
-        <div onClick={() => displayscreen("C")} className="padButton C">
+        <div onClick={clear} className="padButton C">
           C
         </div>
         <div onClick={() => displayscreen("/")} className="padButton div">
@@ -70,7 +75,7 @@ function App() {
         >
           3
         </div>
-        <div onClick={() => displayscreen("=")} className="padButton equal ">
+        <div onClick={calculate} className="padButton equal ">
           =
         </div>
         <div onClick={() => displayscreen("0")} className="padButton zero dark">
