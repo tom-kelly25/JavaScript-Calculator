@@ -20,6 +20,7 @@ function App() {
             placeholder="0"
             disabled
           ></input>
+          <div className="total">{answer}</div>
         </div>
         <div onClick={allClear} className="padButton AC">
           AC

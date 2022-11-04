@@ -35,6 +35,12 @@
   text-align: right;
   background-color: black;
 }
+.total {
+  font-size: 20px;
+  font-family: "Orbitron" sans-serif;
+  text-align: right;
+  background-color: rgb(141, 6, 6);
+}
 .zero {
   grid-area: zero;
 }
