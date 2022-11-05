@@ -1,4 +1,4 @@
-function App() {
+function app() {
   const [expression, setExpression] = React.useState("");
   const [answer, setanswer] = React.useState(0);
 
