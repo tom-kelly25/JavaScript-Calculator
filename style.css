@@ -11,6 +11,9 @@
 #app {
   background-color: gray;
 }
+body {
+  background-color: gray;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -44,7 +47,7 @@
   background-color: black;
 }
 .display input {
-  width: 100%;
+  width: 90%;
   padding: 20px;
   text-align: right;
   background-color: black;
