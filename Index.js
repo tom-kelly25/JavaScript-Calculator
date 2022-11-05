@@ -1,7 +1,6 @@
 function App() {
   const [expression, setExpression] = React.useState("");
   const [answer, setanswer] = React.useState(0);
-
   const displayscreen = (symbol) => {
     setExpression((prev) => prev + symbol);
   };
