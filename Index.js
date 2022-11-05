@@ -1,14 +1,26 @@
 function App() {
   const [expression, setExpression] = React.useState("");
   const [answer, setanswer] = React.useState(0);
+
   const displayscreen = (symbol) => {
     setExpression((prev) => prev + symbol);
   };
   const calculate = () => {
     setanswer(eval(expression));
+    setExpression((prev) => prev + "=");
   };
-  const allClear = () => {};
-  const clear = () => {};
+  const allClear = () => {
+    setExpression("");
+    setanswer(0);
+  };
+  const clear = () => {
+    setExpression((prev) =>
+      prev
+        .split("")
+        .slice(0, prev.length - 1)
+        .join("")
+    );
+  };
 
   return (
     <div className="container">
