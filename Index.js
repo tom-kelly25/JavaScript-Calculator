@@ -1,4 +1,4 @@
-function app() {
+function App() {
   const [expression, setExpression] = React.useState("");
   const [answer, setanswer] = React.useState(0);
 
@@ -101,4 +101,4 @@ function app() {
     </div>
   );
 }
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("App"));
