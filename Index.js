@@ -7,8 +7,18 @@ function App() {
   const calculate = () => {
     setanswer(eval(expression));
   };
-  const allClear = () => {};
-  const clear = () => {};
+  const allClear = () => {
+    setExpression("");
+    setanswer(0);
+  };
+  const clear = () => {
+    setExpression((prev) =>
+      prev
+        .split("")
+        .slice(0, prev.length - 1)
+        .join("")
+    );
+  };
 
   return (
     <div className="container">
