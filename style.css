@@ -1,8 +1,15 @@
 .container {
-  padding-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+}
+#app {
+  background-color: gray;
 }
 .grid {
   display: grid;
@@ -20,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 40px;
+  padding: 5px 40px;
   background-color: rgb(141, 6, 6);
   color: white;
   border: 2px solid black;
@@ -28,6 +35,7 @@
   font-family: "Orbitron" sans-serif;
   cursor: pointer;
 }
+
 .display {
   grid-area: display;
   font-size: 20px;
@@ -41,11 +49,14 @@
   text-align: right;
   background-color: black;
 }
+h1 {
+  font-family: Press Start 2P;
+}
+
 .total {
   padding-bottom: 20px;
   padding-right: 20px;
-  width: 100%;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Orbitron" sans-serif;
   text-align: right;
   color: rgb(141, 6, 6);
